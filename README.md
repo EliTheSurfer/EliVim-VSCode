@@ -11,6 +11,7 @@ Customize VSCode to prioritize keyboard usage as much as possible (inspired by N
    - [Copy/overwrite configuration files](#2-copyoverwrite-configuration-files)
    - [Reload/Restart VS Code](#3-reloadrestart-vs-code)
 3. [Usage](#usage)
+   - [Toggle terminal (cmd+,  cmd+t or ctrl+j)](#toggle-terminal-cmd-cmdt-or-ctrlj)
    - [Git (ctrl+g)](#git-ctrlg)
    - [Search text (cmd+shift+f)](#search-text-cmdshiftf)
    - [Search file (cmdp)](#search-file-cmdp)
@@ -81,6 +82,11 @@ now you are done! You can enjoy this minimalist VSCode setup.
 
 ### Usage
 
+#### Toggle terminal (cmd+,  cmd+t or ctrl+j)
+Press cmd+t to toggle the terminal on the side.
+Press cmd+, to open a full editor terminal.
+Press ctrl+j to open the integrated terminal.
+
 #### Git (ctrl+g)
 Press `ctrl+g` to open `lazygit`.
 With this tool, you can perform all your git operations using the keyboard only.
@@ -89,7 +95,7 @@ With this tool, you can perform all your git operations using the keyboard only.
 
 #### Search text (cmd+shift+f)
 Press `cmd+shift+f` to search for text in your project.
-This will trigger `find-it`, which is a fzf-rigrep wrapper for VSCode.
+This will trigger `find-it-faster` extension, which is a fzf-rigrep wrapper for VSCode.
 It has the advantage of showing a preview of the file where the text is found.
 
 <img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.47.09.png"> 
@@ -99,7 +105,6 @@ Press `cmd+p` to search for a file in your project.
 This will trigger the command palette, which has been redesigned. It is noticeably bigger and centered, so you don't have to look at the top of the screen to see the results.
 
 <img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.47.47.png">
-
 
 #### The welcome page
 The welcome page has also been redesigned.
