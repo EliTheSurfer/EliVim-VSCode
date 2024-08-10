@@ -1,0 +1,345 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "contributes": {
+    "problemMatcher": [
+      {
+        "owner": "vitest",
+        "name": "vitest",
+        "fileLocation": [
+          "relative",
+          "${workspaceFolder}"
+        ],
+        "pattern": [
+          {
+            "message": 1,
+            "regexp": "^AssertionError:(.*)$"
+          },
+          {
+            "column": 3,
+            "file": 1,
+            "line": 2,
+            "regexp": "^ ❯ (.*):(.*):(.*)$"
+          }
+        ],
+        "background": {
+          "activeOnStart": false,
+          "beginsPattern": "RERUN",
+          "endsPattern": "Duration (.*)$"
+        }
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "label": "Maximize Panel",
+      "command": "${command:workbench.action.toggleMaximizedPanel}",
+      "type": "shell",
+      "problemMatcher": []
+    },
+    {
+      "label": "side Tests",
+      "type": "shell",
+      "command": [
+        "${command:workbench.action.createTerminalEditorSide}",
+        "runInTerminal.run"
+      ],
+      "args": [
+        "npm run test"
+      ],
+      "problemMatcher": [
+        {
+          "owner": "vitest",
+          "fileLocation": [
+            "relative",
+            "${workspaceFolder}"
+          ],
+          "pattern": [
+            {
+              "message": 1,
+              "regexp": "^AssertionError:(.*)$"
+            },
+            {
+              "column": 3,
+              "file": 1,
+              "line": 2,
+              "regexp": "^ ❯ (.*):(.*):(.*)$"
+            }
+          ],
+          "background": {
+            "activeOnStart": false,
+            "beginsPattern": "RERUN",
+            "endsPattern": "Duration  (.*)$"
+          }
+        }
+      ]
+    },
+    {
+      "label": "LazyGit",
+      "dependsOn": [
+        "Maximize Panel"
+      ],
+      "type": "process",
+      "command": "lazygit",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false,
+        "close": true
+      }
+    },
+    {
+      "label": "Telescope",
+      "dependsOn": [
+        "Maximize Panel"
+      ],
+      "type": "process",
+      "command": "telescope",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": false,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false,
+        "close": true
+      }
+    },
+    {
+      "label": "Gitlab",
+      "dependsOn": [
+        "Maximize Panel"
+      ],
+      "type": "shell",
+      "command": "glab pipeline ci view",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false,
+        "close": true
+      }
+    },
+    {
+      "label": "vitest client dev",
+      "type": "shell",
+      "command": "vitest --coverage --config test/vitest.config.ts",
+      "problemMatcher": [
+        {
+          "owner": "typescript",
+          "source": "Typescript",
+          "fileLocation": "absolute",
+          "applyTo": "allDocuments",
+          "background": {
+            "activeOnStart": true
+            // "beginsPattern": "sd",
+            // "endsPattern": " > "
+          },
+          "pattern": [
+            {
+              "regexp": "(ERROR|WARNING)\\(TypeScript\\)  (.*)",
+              "severity": 1,
+              "message": 2
+            },
+            {
+              "regexp": "^ FILE  (.*):(\\d*):(\\d*)$",
+              "file": 1,
+              "line": 2,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "VITEST_DEFAULT_REPORTER",
+      "type": "shell",
+      "isBackground": true,
+      "command": "npm run test",
+      "group": "test",
+      "runOptions": {
+        "runOn": "default"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "never",
+        "revealProblems": "never",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": true
+      },
+      "problemMatcher": [
+        {
+          "owner": "vitest",
+          "fileLocation": [
+            "relative",
+            "${workspaceFolder}"
+          ],
+          "pattern": [
+            {
+              "message": 1,
+              "regexp": "^.*Error:(.*)$"
+            },
+            {
+              "column": 4,
+              "file": 2,
+              "line": 3,
+              "regexp": "^(.*) (.*):(.*):(.*)$"
+            }
+          ],
+          "background": {
+            "activeOnStart": false,
+            "beginsPattern": "Failed Tests|RERUN",
+            "endsPattern": "Duration\\s+(.*)"
+          }
+        }
+      ]
+    },
+    {
+      "label": "TDD",
+      "type": "shell",
+      "isBackground": true,
+      "command": "npm run test",
+      "group": "test",
+      "runOptions": {
+        "runOn": "default"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "revealProblems": "onProblem",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": true
+      },
+      "problemMatcher": [
+        {
+          "owner": "vitest",
+          "fileLocation": [
+            "autoDetect",
+            "${workspaceFolder}"
+          ],
+          "pattern": [
+            {
+              "message": 1,
+              "column": 4,
+              "file": 2,
+              "line": 3,
+              "regexp": "::error title=(.*),file=(/.*),line=(.*),col=(.*)::"
+            }
+          ],
+          "background": {
+            "activeOnStart": false,
+            "beginsPattern": "::group::Vitest",
+            "endsPattern": "::endgroup::"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Test Unit (Watch Mode)",
+      "type": "shell",
+      "isBackground": true,
+      "command": "npm run test",
+      "group": "test",
+      "runOptions": {
+        "runOn": "default"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "never",
+        "revealProblems": "never",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": true
+      },
+      "problemMatcher": [
+        {
+          "owner": "vitest",
+          "fileLocation": [
+            "relative",
+            "${workspaceFolder}"
+          ],
+          "pattern": [
+            {
+              "message": 1,
+              "regexp": "^\\s+(FAIL.*)$"
+            },
+            {
+              "message": 1,
+              "regexp": "^.*Error:(.*)$"
+            },
+            {
+              "column": 3,
+              "file": 1,
+              "line": 2,
+              "regexp": "^\\s+❯\\s(.*):(.*):(.*)$"
+            },
+            {
+              "regexp": "^\\s*(\\d*\\|.*)",
+              "message": 1
+            },
+            {
+              "regexp": "^\\s*(\\d*\\|.*)",
+              "message": 1
+            },
+            {
+              "regexp": "^\\s*(\\d*\\|.*)",
+              "message": 1
+            },
+            {
+              "regexp": "^\\s*(\\d*\\|.*)",
+              "message": 1
+            },
+            {
+              "regexp": "^\\s*(\\d*\\|.*)",
+              "message": 1
+            },
+            {
+              "regexp": "^\\s*(\\d*\\|.*)",
+              "message": 1
+            },
+            {
+              "regexp": "(.*)",
+              "message": 1
+            },
+            {
+              "regexp": "(.*)",
+              "message": 1
+            },
+            {
+              "regexp": "(.*)",
+              "message": 1
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "Failed Tests|RERUN",
+            "endsPattern": "Duration\\s+(.*)"
+          }
+        }
+      ]
+    },
+    {
+      "label": "tsc-watch",
+      "command": "tsc",
+      "args": [
+        "-watch"
+      ],
+      "isBackground": true,
+      "problemMatcher": "$tsc-watch"
+    }
+  ]
+}
