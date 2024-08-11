@@ -41,10 +41,20 @@ choco install fzf
 choco install ripgrep
 choco install lazygit
 
+<<<<<<< HEAD
 # Linux
 sudo apt-get install fzf
 sudo apt-get install ripgrep
 sudo apt-get install lazygit
+=======
+# Ubuntu Linux
+sudo apt-get install fzf
+sudo apt-get install ripgrep
+sudo apt-get install lazygit
+
+# Arch Linux
+sudo pacman fzf ripgrep lazygit
+>>>>>>> ecf4405 (linux instructions edit)
 ```
 
 You also need to install the following fonts:
@@ -60,6 +70,7 @@ Once you have installed these prerequisites, you can proceed with the customizat
 
 
 #### 1. Install the extensions
+<<<<<<< HEAD
 To install the extensions, run the following command: 
 ##### on Mac OS or linux:
 ```bash
@@ -74,6 +85,29 @@ Now copy `keybindings.json`, `settings.json`, and `welcomePage.js` to your VSCod
 ```bash
 cp -i keybindings.json settings.json welcomePage.js "$HOME/Library/Application Support/Code/User"
 ```
+=======
+To install the extensions, run the following command:
+##### on Mac OS:
+```bash
+> cat extensions.txt | xargs -L 1 code --install-extension
+```
+##### on Linux:
+```bash
+> cat extensions.txt | xargs -L 1 codium --install-extension
+```
+This command installs each extension listed in the `extensions.txt` file using the `code --install-extension` command (codium in Linux).
+
+#### 2. Copy/overwrite configuration files
+Now copy `keybindings.json`, `settings.json`, and `welcomePage.js` to your VSCode User folder:
+##### on Mac OS:
+```bash
+cp -i keybindings.json settings.json welcomePage.js "$HOME/Library/Application Support/Code/User"
+```
+##### on Linux:
+```bash
+cp keybindings.json settings.json welcomePage.js "$HOME/.config/VSCodium/User/"
+```
+>>>>>>> ecf4405 (linux instructions edit)
 This command copies the mentioned files to the appropriate location in your VSCode User folder.
 
 #### 3. Reload/Restart VS Code
@@ -98,7 +132,11 @@ Press `cmd+shift+f` to search for text in your project.
 This will trigger `find-it-faster` extension, which is a fzf-rigrep wrapper for VSCode.
 It has the advantage of showing a preview of the file where the text is found.
 
+<<<<<<< HEAD
 <img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.47.09.png"> 
+=======
+<img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.47.09.png">
+>>>>>>> ecf4405 (linux instructions edit)
 
 #### Search file (cmd+p)
 Press `cmd+p` to search for a file in your project.
@@ -110,7 +148,11 @@ This will trigger the command palette, which has been redesigned. It is noticeab
 The welcome page has also been redesigned.
 You can modify the welcome page by editing the `welcomePage.js` file.
 
+<<<<<<< HEAD
 <img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.46.39.png"> 
+=======
+<img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.46.39.png">
+>>>>>>> ecf4405 (linux instructions edit)
 
 ### Contributing
 If you have any suggestions or improvements, feel free to open an issue or a pull request.
