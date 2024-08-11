@@ -71,7 +71,7 @@ Once you have installed these prerequisites, you can proceed with the customizat
 
 #### 1. Install the extensions
 <<<<<<< HEAD
-To install the extensions, run the following command: 
+To install the extensions, run the following command:
 ##### on Mac OS or linux:
 ```bash
 > cat extensions.txt | xargs -L 1 code --install-extension
@@ -133,7 +133,7 @@ This will trigger `find-it-faster` extension, which is a fzf-rigrep wrapper for 
 It has the advantage of showing a preview of the file where the text is found.
 
 <<<<<<< HEAD
-<img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.47.09.png"> 
+<img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.47.09.png">
 =======
 <img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.47.09.png">
 >>>>>>> ecf4405 (linux instructions edit)
@@ -149,7 +149,7 @@ The welcome page has also been redesigned.
 You can modify the welcome page by editing the `welcomePage.js` file.
 
 <<<<<<< HEAD
-<img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.46.39.png"> 
+<img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.46.39.png">
 =======
 <img alt="Screenshot" src="https://elivim-vscode.s3.eu-west-3.amazonaws.com/vscode+ricing/Screenshot+2024-08-09+at+01.46.39.png">
 >>>>>>> ecf4405 (linux instructions edit)
