@@ -1,0 +1,405 @@
+{
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "Fantasque",
+  "editor.fontFamily": "Julia Mono",
+  "git.autofetch": true,
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "redhat.telemetry.enabled": true,
+  "atlascode.bitbucket.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "atlascode.jira.enabled": true,
+  "github.copilot.enable": {
+      "*": true,
+      "plaintext": true,
+      "markdown": false,
+      "scminput": false,
+      "yaml": true,
+      "typescript": true
+  },
+  "terminal.integrated.gpuAcceleration": "on",
+  "zenMode.hideLineNumbers": false,
+  "yaml.customTags": [
+      "!And",
+      "!And sequence",
+      "!If",
+      "!If sequence",
+      "!Not",
+      "!Not sequence",
+      "!Equals",
+      "!Equals sequence",
+      "!Or",
+      "!Or sequence",
+      "!FindInMap",
+      "!FindInMap sequence",
+      "!Base64",
+      "!Join",
+      "!Join sequence",
+      "!Cidr",
+      "!Ref",
+      "!Sub",
+      "!Sub sequence",
+      "!GetAtt",
+      "!GetAZs",
+      "!ImportValue",
+      "!ImportValue sequence",
+      "!Select",
+      "!Select sequence",
+      "!Split",
+      "!Split sequence"
+  ],
+  "json.schemas": [],
+  "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "[typescript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.accessibilitySupport": "off",
+  "projectManager.git.baseFolders": [],
+  "goToTest.specFilePatterns": [
+      "{f}.spec{e}",
+      "{f}.test{e}",
+      "{f}-spec{e}",
+      "{f}-test{e}",
+      "{f}_spec{e}",
+      "{f}_test{e}",
+      "{f}Tests{e}",
+      "{f}tests{e}",
+      "{f}Tests",
+      "{f}Test"
+  ],
+  "wallpaper-setting.filePath": "file://${userHome}/Downloads/vscode.gif",
+  "wallpaper-setting.opacity": 0.9,
+  "vim.insertModeKeyBindings": [
+      {
+          "before": [
+              "j",
+              "j"
+          ],
+          "after": [
+              "<Esc>"
+          ]
+      }
+  ],
+  "runCurrentTest.run": "npm run test -r ${relativeTestPath} -- -t \"${testName}\"  --reporter default",
+"runCurrentTest.runAndUpdateSnapshots": "npm run test ${relativeTestPath}  --reporter default",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "gitlens.integrations.enabled": true,
+  "gitlens.remotes": [
+      {
+          "domain": "gitlab.dnm.radiofrance.fr",
+          "type": "GitLab"
+      }
+  ],
+  "goToTest.testFolder": "test/unit/",
+  "goToTest.srcFolder": "source",
+  "goToTest.pathType": "absolute",
+  "git.terminalGitEditor": true,
+  "npm.keybindingsChangedWarningShown": true,
+  "vitest.include": [
+      "test/unit/**"
+  ],
+  "runInTerminal.clearBeforeRun": true,
+  "runInTerminal.commands": [
+      {
+          "key": "ctrl+e",
+          "command": "runInTerminal.run",
+          "args": {
+              "cmd": "npx vitest",
+              "match": "\\.ts$",
+              "name": "s"
+          }
+      }
+  ],
+  "vitest.showFailMessages": true,
+  "vitest.enable": true,
+  "testing.autoRun.mode": "rerun",
+  "wallaby.codeLensFeature.runTest": true,
+  "errorLens.statusBarIconsEnabled": true,
+  "errorLens.statusBarMessageEnabled": true,
+  "errorLens.statusBarMessageTemplate": "$message",
+  "vitest.commandLine": "npm run test",
+  "vim.commandLineModeKeyBindings": [
+      {
+          "before": [
+              ":"
+          ],
+          "commands": [
+              "extension.GoToAnything"
+          ],
+          "silent": false
+      }
+  ],
+  "vim.sneak": true,
+  "vim.visualModeKeyBindings": [
+      {
+          "before": [
+              "j",
+              "j"
+          ],
+          "after": [
+              "<Esc>"
+          ]
+      }
+  ],
+  "editor.stickyScroll.enabled": true,
+  "errorLens.excludePatterns": [
+      "[\"node_modules\", \"**/node_modules\"]",
+      "\"node_modules\"",
+      "node_modules",
+      " [\"**/*.{js}\"]",
+      "**/node_modules"
+  ],
+  "files.exclude": {
+      "**/node_modules": true
+  },
+  "editor.codeLens": false,
+  "editor.lineNumbers": "relative",
+  "errorLens.enabledDiagnosticLevels": [
+      "error",
+      "warning"
+  ],
+  "errorLens.severityText": [
+      "ERROR",
+      "WARNING",
+      "HINT",
+      "ERROR"
+  ],
+  "errorLens.light": {},
+  "totalTypeScript.hiddenTips": [
+      "ts-object-type",
+      "union-type",
+      "basic-types",
+      "passing-generics-to-types",
+      "function-return-type",
+      "typing-function-parameters"
+  ],
+  "update.mode": "start",
+  "window.title": "",
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "terminal.explorerKind": "integrated",
+  "debug.terminal.clearBeforeReusing": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "zenMode.fullScreen": false,
+  "errorLens.messageTemplate": "$message - $source",
+  "javascript.suggest.names": false,
+  "eslint.lintTask.options": "npm run lint",
+  "zenMode.centerLayout": false,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 3,
+  "workbench.editor.limit.excludeDirty": true,
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.highlightModifiedTabs": true,
+  "vim.easymotion": true,
+  "vim.leader": "space",
+  "touchBar.foldAll": true,
+  "touchBar.copyLinesDownAction": false,
+  "touchBar.extensions": false,
+  "touchBar.rename": false,
+  "touchBar.terminal": true,
+  "terminal.integrated.env.osx": {
+      "FIG_NEW_SESSION": "1"
+  },
+  "autoHide.hideSideBarsOnDebug": false,
+  "autoHide.hidePanelOnDebug": false,
+  "apc.electron": {
+      "transparent": true,
+      "opacity": 0.5,
+      "backgroundColor": "#00000000",
+      "frame": false,
+      "vibrancy": "ultra-dark",
+      "visualEffectState": "active"
+  },
+  "apc.stylesheet": {
+
+      ".monaco-hover": "border: 1px solid #007ACC !important;",
+      ".tree": "border: 1px solid #007ACC !important;",
+      ".quick-input-widget": {
+          "width": "900px !important",
+          "left": "41% !important",
+          "top": "250px !important",
+          "padding": "15px !important",
+          "background-color": "rgb(30, 30, 30) !important",
+          "border-radius": "10px !important",
+          "border": "1px solid #007ACC !important"
+      },
+      ".quick-input-widget .quick-input-header": "padding:0px!important;margin-bottom:10px;",
+      ".quick-input-widget .monaco-inputbox": {
+          "padding": "10px !important",
+          "border-radius": "5px!important"
+      },
+      ".quick-input-widget .monaco-list-rows": "top: 0 !important;max-height:670px;min-height:300px;",
+      ".quick-input-widget .monaco-list-row": "position:static!important;border-bottom: 1px solid #333942;padding:5px!important;height:auto!important;",
+      ".quick-input-widget .quick-input-list-entry": "position:relative;padding:0 5px 0px 15px;",
+      ".quick-input-widget .quick-input-list-entry .codicon[class*=codicon-]": "font-size:12px;",
+      ".quick-input-widget .quick-input-list .quick-input-list-entry.quick-input-list-separator-border": "border-top-width:0px!important;",
+      ".monaco-editor .cursor": "background: linear-gradient(to bottom, #00FF00, #00FF00) !important;  color: #161616 !important",
+      ".title-actions": "display: none !important",
+      ".quick-input-widget.show-file-icons, .editor-widget.find-widget": "box-shadow: none !important",
+      ".filematch .monaco-icon-label:before, .custom-list-row.results .monaco-list-row .monaco-icon-label:before": "background-position: 0 bottom !important",
+      ".filematch .monaco-count-badge": "padding: 5px 6px 0 6px !important",
+      ".sidebar .title-label": "padding: 0 !important",
+      ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+      ".sidebar": "border: none !important",
+      ".quick-input-list-row div": "display: flex !important; align-items: center !important",
+      ".panel .composite.title": "visibility: hidden !important",
+      ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "padding-bottom: 6px !important",
+      ".sidebar .title-label h2": "line-height: 2.8 !important",
+      ".monaco-editor .scroll-decoration": "display: none !important",
+      ".monaco-scrollable-element > .shadow.top": "display: none !important",
+      ".editor-group-watermark": {
+          "font-size": "15px !important"
+      }
+  },
+  "apc.font.family": "Julia Mono",
+  "apc.listRow": {
+      "lists": [
+          "quick-input-list",
+          "results"
+      ],
+      "height": 30
+  },
+  "apc.imports": [
+      "file://$HOME/.vscode-oss/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js",
+      "file://$XDG_CONFIG_HOME/.config/codium/User/welcomePage.js"
+  ],
+  "window.titleBarStyle": "native",
+  "security.workspace.trust.untrustedFiles": "open",
+  "binocular.command.commands": [
+      {
+          "shellCommand": "glab pipeline ci view",
+          "commandIdentifier": "pipeline"
+      },
+      {
+          "shellCommand": "git-jira",
+          "commandIdentifier": "git-jira"
+      },
+      {
+          "shellCommand": "telescope",
+          "commandIdentifier": "Telescope"
+      },
+      {
+          "shellCommand": "lazygit",
+          "commandIdentifier": "Lazygit"
+      },
+      {
+          "shellCommand": "git checkout $(git fuzzy log)",
+          "commandIdentifier": "Git fuzzy log"
+      },
+      {
+          "shellCommand": "git checkout $(git fuzzy log ${file})",
+          "commandIdentifier": "Git fuzzy log current file"
+      }
+  ],
+  "quickgrep.preview": true,
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "find-it-faster.general.openFileInPreviewEditor": true,
+  "terminal.integrated.tabs.enabled": false,
+  "gitlab.aiAssistedCodeSuggestions.preferredAccount": "",
+  "autoHide.hideOnDebug": false,
+  "gitlab.customQueries": [
+      {
+          "name": "All project merge requests",
+          "type": "merge_requests",
+          "scope": "all",
+          "state": "opened",
+          "noItemText": "The project has no merge requests"
+      }
+  ],
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editor.empty.hint": "hidden",
+  "vscode_vibrancy.opacity": 0.4,
+  "vscode_vibrancy.refreshInterval": 1000,
+  "vscode_vibrancy.theme": "GitHub Dark Default",
+  "animations.Install-Method": "Apc Customize UI++",
+  "vitest.rootConfig": "./test/vitest.config.ts, vite.config.ts",
+  "gitlab.aiAssistedCodeSuggestions.enabled": true,
+  "gitlab.duoChat.enabled": false,
+  "editor.codeLensFontFamily": "Julia Mono",
+  "editor.experimentalInlineEdit.fontFamily": "Julia Mono",
+  "editor.inlayHints.fontFamily": "Julia Mono",
+  "editor.inlineSuggest.fontFamily": "Julia Mono",
+  "debug.console.fontFamily": "Julia Mono",
+  "scm.inputFontFamily": "Julia Mono",
+  "notebook.output.fontFamily": "Julia Mono",
+  "chat.editor.fontFamily": "Julia Mono",
+  "errorLens.fontFamily": "Julia Mono",
+  "gitlens.blame.fontFamily": "Julia Mono",
+  "window.commandCenter": false,
+  "workbench.panel.opensMaximized": "always",
+  "apc.menubar.compact": true,
+  "apc.activityBar": {},
+  "gitlens.statusBar.alignment": "left",
+  "gitlens.graph.layout": "editor",
+  "gitlens.cloudPatches.experimental.layout": "editor",
+  "gitlens.autolinks": [
+      {
+          "prefix": "API-2385",
+          "url": "https://dnm-radiofrance.atlassian.net/browse/API-2385"
+      }
+  ],
+  "vitest.nodeEnv": {},
+  "errorLens.codeLensEnabled": true,
+  "window.customTitleBarVisibility": "never",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "workbench.colorTheme": "Hyper Term Black",
+  "animations.Command-Palette": "Slide",
+  "animations.Tabs": "None",
+  "animations.Scrolling": "None",
+  "animations.Enabled": true,
+  "wallpaper-setting.wallpaper.filePath": "file://${userHome}/Downloads/437004 3840x2160.jpg",
+  "workbench.iconTheme": "bearded-icons",
+  "explorer.openEditors.visible": 1,
+  "testing.openTesting": "neverOpen",
+  "gitlens.ai.experimental.model": "openai:gpt-4o",
+  "gitlens.graph.dateStyle": "absolute",
+  "github.copilot-labs.showTestGenerationLenses": true,
+  "testExplorerDiagnostics.show.passed": true,
+  "find-it-faster.general.useTerminalInEditor": true,
+  "find-it-faster.advanced.disableStartupChecks": true,
+  "find-it-faster.findWithinFiles.previewWindowConfig": "right:55%:wrap",
+  "find-it-faster.findWithinFiles.previewCommand": "bat --style=numbers --color=always --line-range=:100 {1}  --highlight-line {2}",
+  "find-it-faster.general.searchCurrentWorkingDirectory": "never",
+  "find-it-faster.general.clearTerminalAfterUse": false,
+  "find-it-faster.findWithinFiles.fuzzRipgrepQuery": true,
+  "find-it-faster.general.killTerminalAfterUse": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "window.density.editorTabHeight": "compact",
+  "eslint.lintTask.enable": true,
+  "eslint.enable": true,
+  "testExplorer.useNativeTesting": true,
+  "testing.automaticallyOpenPeekView": "failureAnywhere",
+  "testing.showAllMessages": true,
+  "testExplorer.addToEditorContextMenu": true,
+  "gitlens.launchpad.indicator.openInEditor": true,
+  "gitlens.experimental.cloudIntegrations.github.enabled": true,
+  "terminal.integrated.suggest.builtinCompletions": {
+      "pwshCode": true,
+      "pwshGit": true
+  },
+  "terminal.integrated.suggest.enabled": true,
+  "vscode-graphql-execution.showExecCodelens": true,
+  "workbench.externalBrowser": "Arc",
+"workbench.activityBar.location": "hidden",
+"yaml.schemas": {
+    "file:///home/raijin/.vscode-oss/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+},
+"supermaven.otherWarning": false,
+"git.openRepositoryInParentFolders": "never",
+"glassit-linux.opacity": 30,
+"markdown.preview.lineHeight": 1,
+"workbench.startupEditor": "none",
+"editor.wordWrapColumn": 120,
+"apc.monospace.font.family": "Julia Mono",
+"cmake.showOptionsMovedNotification": false
+}
