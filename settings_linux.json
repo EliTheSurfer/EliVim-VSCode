@@ -1,7 +1,7 @@
 {
   "editor.fontLigatures": true,
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-  "editor.fontFamily": "Jetbrains Mono",
+  "terminal.integrated.fontFamily": "Fantasque",
+  "editor.fontFamily": "Julia Mono",
   "git.autofetch": true,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
@@ -88,8 +88,7 @@
       }
   ],
   "runCurrentTest.run": "npm run test -r ${relativeTestPath} -- -t \"${testName}\"  --reporter default",
-  "runCurrentTest.runAndUpdateSnapshots": "npm run test ${relativeTestPath}  --reporter default",
-  "workbench.startupEditor": "none",
+"runCurrentTest.runAndUpdateSnapshots": "npm run test ${relativeTestPath}  --reporter default",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "editor.overviewRulerBorder": false,
@@ -214,13 +213,14 @@
   "autoHide.hidePanelOnDebug": false,
   "apc.electron": {
       "transparent": true,
-      "opacity": 0.87,
+      "opacity": 0.5,
       "backgroundColor": "#00000000",
       "frame": false,
       "vibrancy": "ultra-dark",
       "visualEffectState": "active"
   },
   "apc.stylesheet": {
+
       ".monaco-hover": "border: 1px solid #007ACC !important;",
       ".tree": "border: 1px solid #007ACC !important;",
       ".quick-input-widget": {
@@ -260,7 +260,7 @@
           "font-size": "15px !important"
       }
   },
-  "apc.font.family": "Jetbrains Mono",
+  "apc.font.family": "Julia Mono",
   "apc.listRow": {
       "lists": [
           "quick-input-list",
@@ -269,8 +269,8 @@
       "height": 30
   },
   "apc.imports": [
-      "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js",
-      "file://${userHome}//Library/Application Support/Code/User/welcomePage.js"
+      "file://$HOME/.vscode-oss/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js",
+      "file://$XDG_CONFIG_HOME/.config/codium/User/welcomePage.js"
   ],
   "window.titleBarStyle": "native",
   "security.workspace.trust.untrustedFiles": "open",
@@ -318,24 +318,23 @@
   ],
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editor.empty.hint": "hidden",
-  "vscode_vibrancy.opacity": 0.9,
+  "vscode_vibrancy.opacity": 0.4,
   "vscode_vibrancy.refreshInterval": 1000,
   "vscode_vibrancy.theme": "GitHub Dark Default",
   "animations.Install-Method": "Apc Customize UI++",
-  "editor.fontSize": 12.5,
   "vitest.rootConfig": "./test/vitest.config.ts, vite.config.ts",
   "gitlab.aiAssistedCodeSuggestions.enabled": true,
   "gitlab.duoChat.enabled": false,
-  "editor.codeLensFontFamily": "Jetbrains Mono",
-  "editor.experimentalInlineEdit.fontFamily": "Jetbrains Mono",
-  "editor.inlayHints.fontFamily": "Jetbrains Mono",
-  "editor.inlineSuggest.fontFamily": "Jetbrains Mono",
-  "debug.console.fontFamily": "Jetbrains Mono",
-  "scm.inputFontFamily": "Jetbrains Mono",
-  "notebook.output.fontFamily": "Jetbrains Mono",
-  "chat.editor.fontFamily": "Jetbrains Mono",
-  "errorLens.fontFamily": "Jetbrains Mono",
-  "gitlens.blame.fontFamily": "Jetbrains Mono",
+  "editor.codeLensFontFamily": "Julia Mono",
+  "editor.experimentalInlineEdit.fontFamily": "Julia Mono",
+  "editor.inlayHints.fontFamily": "Julia Mono",
+  "editor.inlineSuggest.fontFamily": "Julia Mono",
+  "debug.console.fontFamily": "Julia Mono",
+  "scm.inputFontFamily": "Julia Mono",
+  "notebook.output.fontFamily": "Julia Mono",
+  "chat.editor.fontFamily": "Julia Mono",
+  "errorLens.fontFamily": "Julia Mono",
+  "gitlens.blame.fontFamily": "Julia Mono",
   "window.commandCenter": false,
   "workbench.panel.opensMaximized": "always",
   "apc.menubar.compact": true,
@@ -391,5 +390,16 @@
   "terminal.integrated.suggest.enabled": true,
   "vscode-graphql-execution.showExecCodelens": true,
   "workbench.externalBrowser": "Arc",
-  "workbench.activityBar.location": "hidden"
+"workbench.activityBar.location": "hidden",
+"yaml.schemas": {
+    "file:///home/raijin/.vscode-oss/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+},
+"supermaven.otherWarning": false,
+"git.openRepositoryInParentFolders": "never",
+"glassit-linux.opacity": 30,
+"markdown.preview.lineHeight": 1,
+"workbench.startupEditor": "none",
+"editor.wordWrapColumn": 120,
+"apc.monospace.font.family": "Julia Mono",
+"cmake.showOptionsMovedNotification": false
 }
