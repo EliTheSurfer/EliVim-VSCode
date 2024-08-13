@@ -102,7 +102,8 @@ now you are done! You can enjoy this minimalist VSCode setup.
 
 ### Usage  
 
-This table shows the current keybindings, editable in "keybindings.json".  
+This table shows the current keybindings, editable in "keybindings.json".  <details>
+<summary>Click to view key commands</summary>
 
 | key                | command                                      | trigger                                                                                                                                                                                     | args     |
 | ------------------ | -------------------------------------------- | -| -------- |
@@ -179,6 +180,8 @@ This table shows the current keybindings, editable in "keybindings.json".
 | shift+tab          | workbench.action.previousEditor              |                                                                                                                                                                                          |          |
 | ctrl+alt+cmd+5     | -workbench.action.previousEditor             |                                                                                                                                                                                          |          |
 | alt+cmd+left       | -workbench.action.previousEditor             |                                                                                                                                                                                          |          ||
+
+</details>
 
 
 
