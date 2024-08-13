@@ -221,6 +221,7 @@
       "visualEffectState": "active"
   },
   "apc.stylesheet": {
+      ".inline-tabs-placeholder": "display: none !important;",
       ".monaco-hover": "border: 1px solid #007ACC !important;",
       ".tree": "border: 1px solid #007ACC !important;",
       ".quick-input-widget": {
