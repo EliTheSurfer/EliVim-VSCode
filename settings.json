@@ -94,12 +94,6 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.overviewRulerBorder": false,
   "gitlens.integrations.enabled": true,
-  "gitlens.remotes": [
-      {
-          "domain": "gitlab.dnm.radiofrance.fr",
-          "type": "GitLab"
-      }
-  ],
   "goToTest.testFolder": "test/unit/",
   "goToTest.srcFolder": "source",
   "goToTest.pathType": "absolute",
@@ -344,12 +338,6 @@
   "gitlens.statusBar.alignment": "left",
   "gitlens.graph.layout": "editor",
   "gitlens.cloudPatches.experimental.layout": "editor",
-  "gitlens.autolinks": [
-      {
-          "prefix": "API-2385",
-          "url": "https://dnm-radiofrance.atlassian.net/browse/API-2385"
-      }
-  ],
   "vitest.nodeEnv": {},
   "errorLens.codeLensEnabled": true,
   "window.customTitleBarVisibility": "never",
