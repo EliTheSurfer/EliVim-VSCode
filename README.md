@@ -91,7 +91,7 @@ Now copy `keybindings.json`, `settings.json`, and `welcomePage.js` to your VSCod
 cp -i keybindings.json settings.json welcomePage.js "${userHome}/Library/Application Support/Code/User"
 ```
 ##### on Linux:
-In Linux, several additional steps are required for this configuration to run properly. First, the [APC Customize UI Plugin](https://github.com/drcika/apc-extension) needs to be able to manipulate the files in the VSCode/Codium installation. This process is described [here](https://github.com/drcika/apc-extension?tab=readme-ov-file#mac-and-linux-users). Also, Linux users should edit the 'settings_linux.json' to ensure paths are correct for your distribution.  
+In Linux, several additional steps are required for this configuration to run properly. First, the [Custom UI Style extension](https://github.com/subframe7536/vscode-custom-ui-style) needs to be able to manipulate the files in the VSCode/Codium installation. Also, Linux users should edit the 'settings_linux.json' to ensure paths are correct for your distribution.  
 
 ```bash
 cp keybindings.json welcomePage.js "$XDG_CONFIG_DIR/VSCode/User/"
