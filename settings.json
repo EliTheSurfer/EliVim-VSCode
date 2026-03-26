@@ -186,7 +186,7 @@
             }
         }
     ],
-    
+
     "testing.autoRun.mode": "rerun",
     "wallaby.codeLensFeature.runTest": true,
     "errorLens.statusBarIconsEnabled": true,
@@ -266,52 +266,122 @@
     },
     // vibrancy requires other panels to be transparent
     // see https://code.visualstudio.com/api/references/theme-color
-    
-    "custom-ui-style.webview.stylesheet": {
-        ".inline-tabs-placeholder": "display: none !important;",
-        ".monaco-hover": "border: 1px solid #007ACC !important;",
-        ".tree": "border: 1px solid #007ACC !important;",
+    "custom-ui-style.stylesheet": {
+        ".inline-tabs-placeholder": {
+            "display": "none !important"
+        },
+        ".monaco-hover": {
+            "border": "1px solid #007ACC !important"
+        },
+        ".tree": {
+            "border": "1px solid #007ACC !important"
+        },
         ".quick-input-widget": {
             "width": "900px !important",
-            "left": "41% !important",
+            "left": "50% !important",
+            "transform": "translateX(-50%) !important",
             "top": "250px !important",
             "padding": "15px !important",
             "background-color": "rgb(30, 30, 30) !important",
             "border-radius": "10px !important",
             "border": "1px solid #007ACC !important"
         },
-        ".quick-input-widget .quick-input-header": "padding:0px!important;margin-bottom:10px;",
+        ".quick-input-widget .quick-input-header": {
+            "padding": "0px !important",
+            "margin-bottom": "10px"
+        },
         ".quick-input-widget .monaco-inputbox": {
             "padding": "10px !important",
-            "border-radius": "5px!important"
+            "border-radius": "5px !important"
         },
-        ".quick-input-widget .monaco-list-rows": "top: 0 !important;max-height:670px;min-height:300px;",
-        ".quick-input-widget .monaco-list-row": "position:static!important;border-bottom: 1px solid #333942;padding:5px!important;height:auto!important;",
-        ".quick-input-widget .quick-input-list-entry": "position:relative;padding:0 5px 0px 15px;",
-        ".quick-input-widget .quick-input-list-entry .codicon[class*=codicon-]": "font-size:12px;",
-        ".quick-input-widget .quick-input-list .quick-input-list-entry.quick-input-list-separator-border": "border-top-width:0px!important;",
-        ".monaco-editor .cursor": "background: linear-gradient(to bottom, #00FF00, #00FF00) !important;  color: #161616 !important",
-        ".title-actions": "display: none !important",
-        ".quick-input-widget.show-file-icons, .editor-widget.find-widget": "box-shadow: none !important",
-        ".filematch .monaco-icon-label:before, .custom-list-row.results .monaco-list-row .monaco-icon-label:before": "background-position: 0 bottom !important",
-        ".filematch .monaco-count-badge": "padding: 5px 6px 0 6px !important",
-        ".sidebar .title-label": "padding: 0 !important",
-        ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-        ".sidebar": "border: none !important",
-        ".quick-input-list-row div": "display: flex !important; align-items: center !important",
-        ".panel .composite.title": "visibility: hidden !important",
-        ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "padding-bottom: 6px !important",
-        ".sidebar .title-label h2": "line-height: 2.8 !important",
-        ".monaco-editor .scroll-decoration": "display: none !important",
-        ".monaco-scrollable-element > .shadow.top": "display: none !important",
+        ".quick-input-widget .monaco-list-rows": {
+            "top": "0 !important",
+            "max-height": "670px",
+            "min-height": "300px"
+        },
+        ".quick-input-widget .monaco-list-row": {
+            "position": "static !important",
+            "border-bottom": "1px solid #333942",
+            "padding": "5px !important",
+            "height": "auto !important"
+        },
+        ".quick-input-widget .quick-input-list-entry": {
+            "position": "relative",
+            "padding": "0 5px 0px 15px"
+        },
+        ".quick-input-widget .quick-input-list-entry .codicon[class*=codicon-]": {
+            "font-size": "12px"
+        },
+        ".quick-input-widget .quick-input-list .quick-input-list-entry.quick-input-list-separator-border": {
+            "border-top-width": "0px !important"
+        },
+        ".monaco-editor .cursor": {
+            "background": "linear-gradient(to bottom, #00FF00, #00FF00) !important",
+            "color": "#161616 !important"
+        },
+        ".title-actions": {
+            "display": "none !important"
+        },
+        ".quick-input-widget.show-file-icons, .editor-widget.find-widget": {
+            "box-shadow": "none !important"
+        },
+        ".filematch .monaco-icon-label:before, .custom-list-row.results .monaco-list-row .monaco-icon-label:before": {
+            "background-position": "0 bottom !important"
+        },
+        ".filematch .monaco-count-badge": {
+            "padding": "5px 6px 0 6px !important"
+        },
+        ".sidebar .title-label": {
+            "padding": "0 !important"
+        },
+        ".monaco-workbench .monaco-list:not(.element-focused):focus:before": {
+            "outline": "none !important"
+        },
+        ".sidebar": {
+            "border": "none !important"
+        },
+        ".quick-input-list-row div": {
+            "display": "flex !important",
+            "align-items": "center !important"
+        },
+        ".panel .composite.title": {
+            "visibility": "hidden !important"
+        },
+        ".title.show-file-icons .label-container .monaco-icon-label.file-icon": {
+            "padding-bottom": "6px !important"
+        },
+        ".sidebar .title-label h2": {
+            "line-height": "2.8 !important"
+        },
+        ".monaco-editor .scroll-decoration": {
+            "display": "none !important"
+        },
+        ".monaco-scrollable-element > .shadow.top": {
+            "display": "none !important"
+        },
         ".editor-group-watermark": {
-            "font-size": "15px !important"
+            "justify-content": "center !important",
+            "align-items": "center !important",
+            "& .letterpress": {
+                "display": "none !important"
+            },
+            "& .shortcuts": {
+                "display": "none !important"
+            },
+            "&::before": {
+                "content": "'  ███▄    █ ▓█████  ▒█████   ██▒   █▓ ██▓ ███▄ ▄███▓ \\A  ██ ▀█   █ ▓█   ▀ ▒██▒  ██▒▓██░   █▒▓██▒▓██▒▀█▀ ██▒ \\A  ▓██  ▀█ ██▒▒███   ▒██░  ██▒ ▓██  █▒░▒██▒▓██    ▓██░ \\A  ▓██▒  ▐▌██▒▒▓█  ▄ ▒██   ██░  ▒██ █░░░██░▒██    ▒██  \\A  ▒██░   ▓██░░▒████▒░ ████▓▒░   ▒▀█░  ░██░▒██▒   ░██▒ \\A  ░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒░▒░▒░    ░ ▐░  ░▓  ░ ▒░   ░  ░ \\A  ░ ░░   ░ ▒░ ░ ░  ░  ░ ▒ ▒░    ░ ░░   ▒ ░░  ░      ░ \\A    ░   ░ ░    ░   ░ ░ ░ ▒       ░░   ▒ ░░      ░    \\A          ░    ░  ░    ░ ░        ░   ░         ░    \\A                                 ░                   '",
+                "white-space": "pre",
+                "font-family": "monospace",
+                "font-size": "14px",
+                "line-height": "1.3",
+                "color": "limegreen",
+                "text-align": "center"
+            }
         }
     },
     "custom-ui-style.external.imports": [
-        "file://${userHome}/Library/Application Support/Code/User/emptyPage.js",
+        "file://${userHome}/.cursor/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
     ],
-    // fin de l'import depuis la chaine youtube de igor babko
     "window.titleBarStyle": "native",
     "security.workspace.trust.untrustedFiles": "open",
     "binocular.command.commands": [
@@ -349,6 +419,15 @@
     "workbench.editor.tabActionCloseVisibility": false,
     "workbench.editor.empty.hint": "hidden",
     "animations.Install-Method": "Custom UI Style",
+    "animations.Command-Palette": "Fade",
+    "animations.Tabs": "None",
+    "animations.Scrolling": "None",
+    "animations.Enabled": true,
+    "animations.CursorAnimation": true,
+    "animations.CursorAnimationOptions": {
+        "Color": "#00ff00"
+    },
+    "animations.Focus-Dimming-Mode": "Everything But Editor",
     "editor.fontSize": 13,
     "vitest.rootConfig": "./test/vitest.config.ts, vite.config.ts",
     "editor.codeLensFontFamily": "Jetbrains Mono",
@@ -369,10 +448,6 @@
     "errorLens.codeLensEnabled": true,
     "window.customTitleBarVisibility": "never",
     "github.copilot.editor.enableAutoCompletions": true,
-    "animations.Command-Palette": "Slide",
-    "animations.Tabs": "None",
-    "animations.Scrolling": "None",
-    "animations.Enabled": true,
     "workbench.iconTheme": "bearded-icons",
     "explorer.openEditors.visible": 1,
     "gitlens.graph.dateStyle": "absolute",
@@ -443,10 +518,6 @@
     "vim.searchHighlightColor": "blue",
     "editor.peekWidgetDefaultFocus": "editor",
     "window.newWindowDimensions": "maximized",
-    "atlascode.jira.lastCreateSiteAndProject": {
-        "siteId": "bdd4bedd-1521-40aa-84a6-d348241e248b",
-        "projectKey": "ACQ"
-    },
     "diffEditor.hideUnchangedRegions.enabled": true,
     "diffEditor.ignoreTrimWhitespace": true,
     "testing.automaticallyOpenPeekView": "never",
@@ -466,5 +537,6 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "custom-ui-style.background.opacity": 0.4,
     "custom-ui-style.font.sansSerif": "Jetbrains Mono Nerd Font",
-    "workbench.activityBar.location": "hidden"
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false
 }
